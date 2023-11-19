@@ -52,7 +52,6 @@ input{
 #dob{
     margin-left: -21px;
 }
-
 }
 #acceptTerms{
     width: 13px;
@@ -64,12 +63,10 @@ button{
     margin-bottom: 2px;
     background-color: black;
     color: white;
-    padding:6px;
-    width:80px;
 }
 #t1{
     position: relative;
-    background-color: white;
+    background-color: royalblue;
     padding: 10px 6px 8px 6px;
     margin-top: 5px;
     box-shadow: 0 25px 50px -12px royalblue;
@@ -95,6 +92,7 @@ button{
 
 td{
     border-width: 1px;
+    /* border-left-width: 0px; */
     border-style: solid;
     padding-left: 1rem;
     padding-right: 1rem;
