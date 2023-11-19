@@ -21,7 +21,7 @@ h2{
     margin-bottom: 20px;
     font-style:italic;
 }
-.login-box{
+.lo_bo{
     background-color: bisque;
     width: 405px;
     height: 391px;
@@ -52,8 +52,6 @@ input{
 #dob{
     margin-left: -21px;
 }
-#check{
-    margin-left: 1px;
 
 }
 #acceptTerms{
@@ -66,10 +64,12 @@ button{
     margin-bottom: 2px;
     background-color: black;
     color: white;
+    padding:6px;
+    width:80px;
 }
-#tab1{
+#t1{
     position: relative;
-    background-color: royalblue;
+    background-color: black;
     padding: 10px 6px 8px 6px;
     margin-top: 5px;
     box-shadow: 0 25px 50px -12px royalblue;
@@ -82,10 +82,10 @@ button{
     padding-right: 2.5rem;
     
 }
-#table2{
+#t2{
     margin: auto;
 }
-#table3{
+#t3{
     font-size: 1.875rem;
     line-height: 2.25rem;
     text-align: center;
@@ -95,7 +95,6 @@ button{
 
 td{
     border-width: 1px;
-    /* border-left-width: 0px; */
     border-style: solid;
     padding-left: 1rem;
     padding-right: 1rem;
