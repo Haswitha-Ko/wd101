@@ -56,7 +56,7 @@ input{
 }
 #acceptTerms{
     width: 13px;
-    margin-left: -73px;
+    margin-left: 20px;
 }
 button{
     margin-top: auto;
@@ -74,7 +74,7 @@ button{
     margin-top: 5px;
     box-shadow: 0 25px 50px -12px royalblue;
     border-width: 1px;
-    border-color: black;
+    border-color: royalblue;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5rem;
