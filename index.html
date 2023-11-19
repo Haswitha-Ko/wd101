@@ -4,39 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login_Form</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css" >
+    
 </head>
 <body>
     <div class="container">
-        <div class="login">
-            <form id="form">
-                <h2>Registration Form</h2>
+        <div class="login-box">
+            <form id="login-form">
+                <h2>Registration Form </h2>
                 <label for="name">Name</label>
-                <input class="name" type="text" id="name" name="name">
+                <input type="text" id="name" name="name">
                 <br>
                 <label for="email">Email</label>
-                <input class="email" type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required>
                 <br>
-
+                
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password">
                 <br>
-
+                
                 <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" name="dob"><br>
-
-
-                <input class="tc" type="checkbox" id="acceptTerms" name="acceptTerms">
-                <label class="check" for="acceptTerms">Accept Terms and Conditions</label>
+                <input type="date" id="dob" name="dob">
+                
                 <br>
+                <input type="checkbox" id="acceptTerms" name="acceptTerms">
+                <label id="check" for="acceptTerms">Accept Terms and Conditions</label>  
+                <br>
+
                 <button id="button" type="submit">Submit</button>
             </form>
         </div>
-        <div id="t1">
-            <div id="t2">
-                <h2 id="t3">Entries</h2>
-                <div id="user_entries">
+        <div id ="table1"> 
+            <div id = "table2">
+                <h2 id="table3">Entries</h2>
+                <div id="user-details">
 
                 </div>
             </div>
@@ -44,5 +46,4 @@
     </div>
     <script src="index.js"></script>
 </body>
-
 </html>
