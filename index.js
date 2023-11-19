@@ -1,4 +1,4 @@
-let loginform = document.getElementById("login-form");
+let loginform = document.getElementById("form");
 const dobinput = document.getElementById('dob');
 
 dobinput.addEventListener('input', (event) => {
@@ -15,7 +15,7 @@ dobinput.addEventListener('input', (event) => {
 });
 
 const getdetails = ()=>{
-    let details = localStorage.getItem("user-details");
+    let details = localStorage.getItem("user_enteries");
     if(details){
         details = JSON.parse(details);
     }
@@ -49,7 +49,7 @@ const showdetails =()=>{
         </tr>${tableentries}
     </table>`;
 
-    let fdetails = document.getElementById("user-details");
+    let fdetails = document.getElementById("user_enteries");
     fdetails.innerHTML = tab;
 }
 const saveform = (event)=>{
@@ -67,7 +67,7 @@ const saveform = (event)=>{
         ch
     }
     data.push(entry);
-    localStorage.setItem("user-details",JSON.stringify(data));
+    localStorage.setItem("user_enteries",JSON.stringify(data));
     showdetails();
 }
 
