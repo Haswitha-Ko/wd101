@@ -1,13 +1,11 @@
-* {
+*{
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: white;
+body{
+ background-color: honeydew;   
 }
-
-.container {
+.container{
     height: 500px;
     display: flex;
     justify-content: center;
@@ -15,104 +13,100 @@ body {
     flex-direction: column;
     margin-top: 50px;
 }
-
-h2 {
+h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin:  10px;
     margin-bottom: 20px;
-    font-style: italic;
+    font-style:italic;
 }
-
-.login {
-    background-color: #FFFDD0;
+.login-box{
+    background-color: bisque;
     width: 405px;
     height: 391px;
     display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    border: 1px brown;
-
+    border:2px solid black;
+    
 }
 
-label {
+label{
     height: 30px;
     margin-left: 6px;
     margin-right: 82px;
     margin-bottom: 14px;
+    
     font-family: 'Open Sans', sans-serif;
 }
-
-input {
+input{
     height: 30px;
     width: 180px;
     margin-bottom: 30px;
 }
-
-.name,
-.email {
+#name,#email{
     margin-left: 30px;
 }
-
-#dob {
-    margin-left: -19px;
+#dob{
+    margin-left: -21px;
 }
+#check{
+    margin-left: 1px;
 
-.tc {
+}
+#acceptTerms{
     width: 13px;
-    margin-left: 0px;
+    margin-left: -73px;
 }
-
-button {
+button{
     margin-top: auto;
     margin-left: 6px;
-    margin-bottom: 6px;
-    width: 90px;
-    background-color: #1a75ff;
+    margin-bottom: 2px;
+    background-color: black;
     color: white;
-    border-radius: 4px;
-    padding: 5px;
 }
-
-#t1 {
+#tab1{
     position: relative;
+    background-color: royalblue;
     padding: 10px 6px 8px 6px;
     margin-top: 5px;
-    box-shadow: 0 25px 50px -12px;
+    box-shadow: 0 25px 50px -12px royalblue;
+    border-width: 1px;
+    border-color: royalblue;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0rem;
+    border-radius: 0.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-
+    
 }
-
-#t2 {
+#table2{
     margin: auto;
 }
-
-#t3 {
+#table3{
     font-size: 1.875rem;
     line-height: 2.25rem;
     text-align: center;
     font-weight: 700;
-    /*line-height: 1.2;*/
+    line-height: 1.2;
 }
 
-td {
+td{
+    border-width: 1px;
     /* border-left-width: 0px; */
+    border-style: solid;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    border-color: royalblue;
     font-family: 'Open Sans', sans-serif;
 
 }
-
-th {
+th{
     padding-left: 1rem;
     padding-right: 1rem;
-
+    
 }
