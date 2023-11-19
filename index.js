@@ -1,4 +1,4 @@
-let loginform = document.getElementById("form");
+let loginform = document.getElementById("login-form");
 const dobinput = document.getElementById('dob');
 
 dobinput.addEventListener('input', (event) => {
@@ -8,25 +8,27 @@ dobinput.addEventListener('input', (event) => {
 
     if (age < 18 || age > 55) {
         dobinput.setCustomValidity('Please enter a valid date of birth between ages 18 and 55.');
-    } else {
+    }
+    else{
         dobinput.setCustomValidity('');
     }
 });
 
-const getdetails = () => {
-    let details = localStorage.getItem("user_entries");
-    if (details) {
+const getdetails = ()=>{
+    let details = localStorage.getItem("user-details");
+    if(details){
         details = JSON.parse(details);
-    } else {
-        details = [];
     }
+    else{
+        details = [];
+    } 
     return details;
 }
 let data = getdetails();
 
-const showdetails = () => {
+const showdetails =()=>{
     const details = getdetails();
-    const tableentries = details.map((entry) => {
+    const tableentries = details.map((entry)=>{
         const nameCell = `<td>${entry.name}</td>`;
         const emailCell = `<td>${entry.email}</td>`;
         const passwordCell = `<td>${entry.pw}</td>`;
@@ -36,23 +38,23 @@ const showdetails = () => {
         return row;
     }).join("\n");
 
-    const tab =
-        `<table class="table-auto w-full">
+    const tab = 
+    `<table class="table-auto w-full">
         <tr>
             <th>Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>DOB</th>
-            <th>Accepted Terms</th>
+            <th>dob</th>
+            <th>accepted terms?</th>
         </tr>${tableentries}
     </table>`;
 
-    let fdetails = document.getElementById("user_entries");
+    let fdetails = document.getElementById("user-details");
     fdetails.innerHTML = tab;
 }
-const saveform = (event) => {
+const saveform = (event)=>{
     event.preventDefault();
-    const name = document.getElementById("name").value;
+    const name = document.getElementById("name").value; 
     const email = document.getElementById("email").value;
     const pw = document.getElementById("password").value;
     const db = document.getElementById("dob").value;
@@ -65,10 +67,10 @@ const saveform = (event) => {
         ch
     }
     data.push(entry);
-    localStorage.setItem("user_entries", JSON.stringify(data));
+    localStorage.setItem("user-details",JSON.stringify(data));
     showdetails();
 }
 
-loginform.addEventListener("submit", saveform);
+loginform.addEventListener("submit",saveform); 
 
 showdetails();
